@@ -7,9 +7,9 @@ export default function TodoItem(props) {
     <ul>
       {todos.map((item, index) => {
         return (
-          <li key={`todo${index}`}>
-            <span>{item}</span>
-            <Button type="primary" onClick={() => props.deleteTodo(index)}>删除</Button>
+          <li key={`todo${index}`} style={{ marginBottom: 10 }}>
+            <span style={{ padding: 5 }}>{item}</span>
+            <Button size="small" type="ghost" onClick={() => props.deleteTodo(index)}>删除</Button>
           </li>
         )
       })}
