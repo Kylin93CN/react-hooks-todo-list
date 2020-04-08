@@ -23,7 +23,7 @@ export default function Todo() {
         onChange={e => {
           setInput(e.target.value);
         }}
-        onPressEnter={() => addTodo()}/>
+        onPressEnter={addTodo}/>
       <TodoItem todos={todos} deleteTodo={deleteTodo}/>
     </div>
   )
